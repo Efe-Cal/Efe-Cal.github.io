@@ -1,0 +1,120 @@
+.horizontal-split {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-section,
+.bottom-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+}
+.gradient-background {
+    background: linear-gradient(to left bottom, #395a93, #90b6ce);
+    /* Replace the colors with your desired gradient colors */
+    height: 100vh; /* Adjust the height as needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+
+}
+.waviy {
+  position: relative;
+  height: 50%;
+  -webkit-box-reflect: below -120px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  top:0;
+  margin-top: 0;
+}
+.waviy .wspan {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* ============================================================================= */
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  
+.message{ font-size: 55px;
+    font-famiLy: tahoma; 
+    --height: 70px; 
+    min-height: var(--height); 
+    line-height: var(--height); } 
+.slides{ 
+    dispLay: inline-flex;
+    height: var(--height); 
+    overflow: hidden;
+    padding: 0 5px; 
+    margin: 0 -5px; 
+}
+
+.slide1{ 
+        color: #333; 
+        dispLay: flex; 
+        font-family: tahoma;
+        flex-flow: column nowrap; 
+        transform: translateY(100%);
+        animation:slide-up 8s ease infinite;
+    } 
+
+  @keyframes slide-up{
+    10%, 33%{ 
+        transform: transLateY(0%); 
+    }
+    43%, 66%{ 
+        transform: transLateY(-100%); 
+    }
+     76%, 100%{ 
+        transform: transLateY(-200%); 
+    }
+}
